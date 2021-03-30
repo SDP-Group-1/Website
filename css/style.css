@@ -1545,6 +1545,18 @@ line-height: 60px;
 padding: 45px 0;
 text-align: center;}
 
+/*transition*/
 
 
+.clickable {
+    transition: transform 300ms;
+}
 
+.clickable:hover{
+    transition: transform 200ms;
+    transform: scale(1.05);
+}
+
+.clickable:active{
+    transform: scale(1.07);
+}
