@@ -106,12 +106,13 @@
           <div class="titlepage">
             <h2>App detail</h2>
           </div>
-          <p>We have three separate bottom for the app:  <h2>The Fall detection demo:</h2> displays sensor readings. However, when a pre-determined acc. value is crossed, this triggers the app to record the sensor values for roughly 2 seconds before and after that event. This data is fed into our classifier, which tells us if a fall has been detected or not. If a fall is detected, there is a screen that allows the user to cancel the call to the robot and emergency services, and if no response takes place - the calls take place. If the classifier does not detect a fall, then the app continues to run as normal.  <br> 
-          	  <h2>Home page:</h2> robot not connected - when the app is launched, the first thing that takes place is a request to connect to the robot via WiFi. If the connection is successful, a green message is displayed, if not, a red message is displayed. Currently, our web server is under development so the text is red. <br>
-<h2>Set up:</h2> we've now provided the ability for the user to enter their details and map their home using OLI. 
-					</p>
+          <p>We have three separate bottom for the app:  <h2>Call Oli:</h2> The app will access your current location and send Oli towards you
+          	  <h2> Set up:</h2>The user can enter their details and map their home using OLI in this bottom. <br>
+<h2> The Fall detection demo:</h2> Displayed sensor reading of the app. The app estimate the data received in real-time, and when it detects a fall, it will allow the user to cancel the call with-in 30 seconds. The App will return normal if the user cancel the call
+					<br><br>The app will warn the user if OLI is not connected </p>
+
 					
-          <a href="Javascript:void(0)">Read More</a>
+          
         </div>
       </div> 
     
@@ -119,7 +120,7 @@
          <div class="upcomimg">
          	<video width="748" height="1268" controls="controls">
 
-  				 <source src="images/222222.mp4" type="video/mp4">
+  				 <source src="images/Screen Recording 2021-03-15 at 11.06.39.mov" type="video/mp4">
 
 					</video>
            
