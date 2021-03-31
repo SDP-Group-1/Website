@@ -159,7 +159,7 @@
           <div class="titlepage">
             <h2>Navigation</h2>
           </div>
-          <p> O.L.I. starts its movement froma random position in an unknown environment and builds the occupancy grid by keeping track of its ownp osition relative to the built map. <br>We have use SLAM algorithem for this feature.</p>
+          <p> O.L.I. starts its movement from a random position in an unknown environment and builds the occupancy grid by keeping track of its own position relative to the built map. <br>We have used SLAM (simultaneous localization and mapping) for this feature and a LDS-O1 LiDAR.</p>
          
         </div>
       </div> 
@@ -184,7 +184,8 @@
           <div class="titlepage">
             
           </div>
-          <p><h2>More example of occupancy grid building</h2><br>red dot for start point and pink dot for destination:</p>
+          <h2>Route Planning </h2>
+          <p><br>A route-planning feature has been designed using the previously built occupancy grid, and two given points (start and end) in the form of coordinates. The robot's controller can then plan a route that avoids collisions. The algorithm used is rapidly exploring random tree (RTT). In the images below, you can see some examples with visible tree structure (the red dot represents the starting point while the pink dot represents the target destination):</p>
           
         </div>
       </div>
@@ -205,7 +206,7 @@
           <div class="titlepage">
             <h2>LIDAR</h2>
           </div>
-          <p>We use LIDAR sensor to ensure the OLI doesn’t running in to anybody while moving, consider energy cost, we use 3.5m range LiDAR that have a 360-degree field of view.</p>
+          <p>We use a LIDAR sensor to ensure the OLI doesn’t running in to anybody while moving, consider energy cost, we use 3.5m range LiDAR that have a 360-degree field of view.</p>
          
         </div>
       </div> 
