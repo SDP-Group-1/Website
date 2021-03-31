@@ -842,6 +842,7 @@
      }
 
  .main-menu {
+    
      text-align: center;
 }
  .main-menu ul {
@@ -859,7 +860,7 @@
      font-size: 16px;
      display: block;
      font-weight: 500;
-     color: #fff;
+     color: #0A2342;
      text-transform: uppercase;
      transition: all 0.3s ease-in;
 }
@@ -871,8 +872,7 @@ border-radius: 17px;
 transition: all 0.3s ease-in;
  }
  .main-menu ul li:last-child a {
-     padding-right: 0;
-     background: transparent;
+     padding-right: 10px;
 }
  .sub-down li {
      background: #ffffff;
@@ -963,7 +963,6 @@ transition: all 0.3s ease-in;
      left: 0;
      margin: 0 auto;
      right: 0;
-     padding: 15px 0px;
 }
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
@@ -1534,7 +1533,7 @@ justify-content: center;
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
 
 
-.contineer_page .header {background: #656565; padding-bottom: 27px;     position: inherit;}
+.contineer_page .header {background-image: url('../images/background_muted.jpeg'); background-size: cover; padding-bottom: 27px;     position: inherit;}
 
 .backgro_mh {background: #0ed1f0; }
 .heding h2 {
