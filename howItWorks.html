@@ -133,12 +133,14 @@
     <div class="row display_boxflex">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <h2>Straight:</h2>
-          <p>A straight-line movement done by setting the velocity of the motor of the wheels to positive values.</p>
-          	<h2>Turning:</h2>
-          <p>The TurtleBot3 is a differential wheeled robot, this allows the OLI to gets the current location and rotation of the robot then computes an angle and finally rotates the robot using that angle until it is facing the target.
+          <h2>Straight-Line movement</h2>
+          <p>The straight-line movement done by setting the velocity of the motor of the wheels to positive values.</p>
+          	<h2>Rotating movement</h2>
+          <p>The rotating movement is done by varying the relative rate of rotation of the robot’s wheels. 
+          This is possible because the TurtleBot3 is a differential wheeled robot (based on two separately 
+          driven wheels placed on either side of the robot body). We get the current location and rotation 
+          of the robot then compute an angle and make O.L.I. rotate using that angle in order to face the target point.
           </p>
-          
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -159,7 +161,7 @@
           <div class="titlepage">
             <h2>Navigation</h2>
           </div>
-          <p> O.L.I. starts its movement from a random position in an unknown environment and builds the occupancy grid by keeping track of its own position relative to the built map. <br>We have used SLAM (simultaneous localization and mapping) for this feature and a LDS-O1 LiDAR.</p>
+          <p> O.L.I. starts its movement from a random position in an unknown environment and builds the occupancy grid by keeping track of its own position relative to the built map. <br>We have used SLAM (simultaneous localization and mapping) for this feature and a LDS-O1 LiDAR. </p>
          
         </div>
       </div> 
@@ -182,12 +184,8 @@
     	<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
         <div class="box_text">
           <div class="titlepage">
-            
-          </div>
           <h2>Route Planning </h2>
-          <p><br>A route-planning feature has been designed using the previously built occupancy grid, and two given points (start and end) in the form of coordinates. The robot's controller can then plan a route that avoids collisions. The algorithm used is rapidly exploring random tree (RTT). In the images below, you can see some examples with visible tree structure (the red dot represents the starting point while the pink dot represents the target destination):</p>
-          
-        </div>
+          <p>A route-planning feature has been designed using the previously built occupancy grid, and two given points (start and end) in the form of coordinates. The robot's controller can then plan a route that avoids collisions. The algorithm used is rapidly exploring random tree (RTT). In the images below, you can see some examples with visible tree structure (the red dot represents the starting point while the pink dot represents the target destination):</p>
       </div>
     	<div class="col-xl-24 col-lg-24 col-md-24 col-sm-24">
          <div class="upcomimg">
