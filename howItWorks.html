@@ -55,22 +55,17 @@
             </div>
             <div class="col-xl-10 col-lg-10 col-md-10 col-sm-9">
               
-               <div class="menu-area">
+              <div class="menu-area">
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Home</a> </li>
-                  
                       <li> <a href="budget.html">Budget</a> </li>
-                      <li> <a href="#">System</a> </li>
+                      <li> <a href="system.html">System</a> </li>
                       <li> <a href="howItWorks.html">How it works</a> </li>
                       <li> <a href="eval.html">Evaluation</a> </li>
                       <li> <a href="team.html">Team</a></li>
-                      <li> <a href="#">Documentation</a></li>
+                      <li> <a href="documentation.html">Documentation</a></li>
                       <li> <a href="contact.html">Contact Us</a></li>
-      
-                        <!-- <li > <a href="#contact">login</a> </li> -->
-                      <!-- <li  > <a  class="last_manu" href="#"><img src="images/search_icon.png" alt="#" /></a> </li> -->
                       
                      </ul>
                    </nav>
@@ -133,6 +128,127 @@
     </div>
 </div>
 <!-- end upcoming -->
+<div id="about" class="about">
+  <div class="container">
+    <div class="row display_boxflex">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <h2>Straight:</h2>
+          <p>A straight-line movement done by setting the velocity of the motor of the wheels to positive values.</p>
+          	<h2>Turning:</h2>
+          <p>The TurtleBot3 is a differential wheeled robot, this allows the OLI to gets the current location and rotation of the robot then computes an angle and finally rotates the robot using that angle until it is facing the target.
+          </p>
+          
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <figure><img src="images/drawdiff2.png" alt="#" /></figure>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+<div id="upcoming" class="upcoming">
+  <div class="container-fluid padding_left3">
+    <div class="row display_boxflex">
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+       <div class="box_text">
+          <div class="titlepage">
+            <h2>Navigation</h2>
+          </div>
+          <p> O.L.I. starts its movement froma random position in an unknown environment and builds the occupancy grid by keeping track of its ownp osition relative to the built map. <br>We have use SLAM algorithem for this feature.</p>
+         
+        </div>
+      </div> 
+    
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
+         <div class="upcomimg">
+           <video width="1028" height="802" autoplay muted loop>
+
+  				    <source src="images/Occupancy_Grid_Building_Trim.mp4" type="video/mp4">
+
+					   </video>
+        </div>
+          </div>
+  </div>
+    </div>
+</div>
+<div id="gallery" class="Gallery">
+  <div class="container"> 
+    <div class="row display_boxflex">
+    	<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+        <div class="box_text">
+          <div class="titlepage">
+            
+          </div>
+          <p><h2>More example of occupancy grid building</h2><br>red dot for start point and pink dot for destination:</p>
+          
+        </div>
+      </div>
+    	<div class="col-xl-24 col-lg-24 col-md-24 col-sm-24">
+         <div class="upcomimg">
+           <img src="images/Navi.png" widtht="2046" height="3353"/>
+        </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+<div id="upcoming" class="upcoming">
+  <div class="container-fluid padding_left3">
+    <div class="row display_boxflex">
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+       <div class="box_text">
+          <div class="titlepage">
+            <h2>LIDAR</h2>
+          </div>
+          <p>We use LIDAR sensor to ensure the OLI doesn’t running in to anybody while moving, consider energy cost, we use 3.5m range LiDAR that have a 360-degree field of view.</p>
+         
+        </div>
+      </div> 
+    
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
+         <div class="upcomimg">
+           <video width="1028" height="802" autoplay muted loop>
+
+  				    <source src="images/slam algorithm.mov" type="video/mp4">
+
+					   </video>
+        </div>
+          </div>
+  </div>
+    </div>
+</div>
+<div id="gallery" class="Gallery">
+  <div class="container"> 
+    <div class="row display_boxflex">
+    	<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+        <div class="box_text">
+          <div class="titlepage">
+            
+          </div>
+          <p><h2>How OLI should be operate in real-life scenario</h2>(This scenariois is the first pair of graph in the example)</p>
+          
+        </div>
+      </div>
+    	<div class="col-xl-24 col-lg-24 col-md-24 col-sm-24">
+         <div class="upcomimg">
+           <video width="1280" height="720" autoplay muted loop>
+
+  				    <source src="images/Route Following.mp4" type="video/mp4">
+
+					   </video>
+        </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- end Gallery --> 
 
 
     <!--  footer -->
