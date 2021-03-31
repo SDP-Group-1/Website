@@ -1386,7 +1386,7 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
      border-radius: 30px;
 }
 .contact_bg .send:hover {
-     background-color: #39C0ED;
+     background-color: #2596be;
 
 color: #fff;
 transition: all 0.3s ease-in;
@@ -1441,8 +1441,8 @@ margin: 0 auto;
  .submit {
 
     height: 52px;
-    border: ##39C0ED solid 1px;
-     background: #39C0ED;
+    border: #2596be solid 1px;
+     background: #2596be;
      color: #fff;
      margin-left: -5px;
      font-weight: 500;
@@ -1455,7 +1455,7 @@ margin: 0 auto;
  .submit:hover {
      background: #ddd;
      border: #ddd solid 1px;
-     color: #39C0ED;
+     color: #2596be;
      transition: all 0.3s ease-in;
 
 }
@@ -1497,7 +1497,7 @@ flex-wrap: wrap;
  ul.social_link li a  {
     font-size: 24px;
 color: #161616;
-background: #39C0ED;
+background: #2596be;
 border-radius: 80px;
 display: flex;
 align-items: center;
@@ -1528,7 +1528,7 @@ justify-content: center;
      color: #fff;
 }
  .copyright a:hover {
-     color: #39C0ED ;
+     color: #2596be ;
 }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
@@ -1536,7 +1536,7 @@ justify-content: center;
 
 .contineer_page .header {background-image: url('../images/background_muted.jpeg'); background-size: cover; padding-bottom: 27px;     position: inherit;}
 
-.backgro_mh {background: #39C0ED; }
+.backgro_mh {background: #2596be; }
 .heding h2 {
      color: #fff;
 font-size: 60px;
