@@ -1559,3 +1559,8 @@ text-align: center;}
 .clickable:active{
     transform: scale(1.07);
 }
+
+
+.card-title{
+    font-size: 4vh;
+}
