@@ -41,6 +41,7 @@
   <!-- header -->
   <header>
     <!-- header inner -->
+   
       <div class="header">
         <div class="container">
           <div class="row">
@@ -59,15 +60,13 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Home</a> </li>
-                  
-                      <li> <a href="about.html">Budget</a> </li>
-                      <li> <a href="App.html">App </a> </li>
-                      <li> <a href="Oli.html">Oli</a> </li>
-                      <li> <a href="contact.html">Contact</a> </li>
-      
-                        <li > <a   href="#contact">login</a> </li>
-                      <li  > <a  class="last_manu" href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
+                      <li> <a href="Budget">Budget</a> </li>
+                      <li> <a href="#">System</a> </li>
+                      <li> <a href="#">How it works</a> </li>
+                      <li> <a href="#">Evaluation</a> </li>
+                      <li> <a href="#">Team</a></li>
+                      <li> <a href="#">Documentation</a></li>
+                      <li> <a href="#">Contact Us</a></li>
                       
                      </ul>
                    </nav>
@@ -81,7 +80,7 @@
      <!-- end header inner -->
 
      <!-- end header -->
-     
+    
 </header>
 
 
@@ -90,46 +89,136 @@
     <div class="row">
       <div class="col-md-12">
         <div class="heding">
-           <h2>User interface of App</h2>
+           <h2>Oli detail</h2>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- upcoming -->
+<div id="about" class="about">
+  <div class="container">
+    <div class="row display_boxflex">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <h2>Straight:</h2>
+          <p>A straight-line movement done by setting the velocity of the motor of the wheels to positive values.</p>
+          	<h2>Turning:</h2>
+          <p>The TurtleBot3 is a differential wheeled robot, this allows the OLI to gets the current location and rotation of the robot then computes an angle and finally rotates the robot using that angle until it is facing the target.
+          </p>
+          
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <figure><img src="images/drawdiff2.png" alt="#" /></figure>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
 <div id="upcoming" class="upcoming">
   <div class="container-fluid padding_left3">
     <div class="row display_boxflex">
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
        <div class="box_text">
           <div class="titlepage">
-            <h2>App detail</h2>
+            <h2>Navigation</h2>
           </div>
-          <p>We have three separate bottom for the app:  <h2>Call Oli:</h2> The app will access your current location and send Oli towards you
-          	  <h2> Set up:</h2>The user can enter their details and map their home using OLI in this bottom. <br>
-<h2> The Fall detection demo:</h2> Displayed sensor reading of the app. The app estimate the data received in real-time, and when it detects a fall, it will allow the user to cancel the call with-in 30 seconds. The App will return normal if the user cancel the call
-					<br><br>The app will warn the user if OLI is not connected </p>
-
-					
-          
+          <p> O.L.I. starts its movement froma random position in an unknown environment and builds the occupancy grid by keeping track of its ownp osition relative to the built map. <br>We have use SLAM algorithem for this feature.</p>
+         
         </div>
       </div> 
     
       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
          <div class="upcomimg">
-         	<video width="748" height="1268" controls="controls">
+           <video width="1028" height="802" controls="controls">
 
-  				 <source src="images/Screen Recording 2021-03-15 at 11.06.39.mov" type="video/mp4">
+  				    <source src="images/Occupancy_Grid_Building_Trim.mp4" type="video/mp4">
 
-					</video>
-           
+					   </video>
         </div>
           </div>
   </div>
     </div>
 </div>
-<!-- end upcoming -->
+<div id="gallery" class="Gallery">
+  <div class="container"> 
+    <div class="row display_boxflex">
+    	<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+        <div class="box_text">
+          <div class="titlepage">
+            
+          </div>
+          <p><h2>More example of occupancy grid building</h2><br>red dot for start point and pink dot for destination:</p>
+          
+        </div>
+      </div>
+    	<div class="col-xl-24 col-lg-24 col-md-24 col-sm-24">
+         <div class="upcomimg">
+           <img src="images/Navi.png" widtht="2046" height="3353"/>
+        </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+<div id="upcoming" class="upcoming">
+  <div class="container-fluid padding_left3">
+    <div class="row display_boxflex">
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+       <div class="box_text">
+          <div class="titlepage">
+            <h2>LIDAR</h2>
+          </div>
+          <p>We use LIDAR sensor to ensure the OLI doesn’t running in to anybody while moving, consider energy cost, we use 3.5m range LiDAR that have a 360-degree field of view.</p>
+         
+        </div>
+      </div> 
+    
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
+         <div class="upcomimg">
+           <video width="1028" height="802" controls="controls">
+
+  				    <source src="images/slam algorithm.mov" type="video/mp4">
+
+					   </video>
+        </div>
+          </div>
+  </div>
+    </div>
+</div>
+<div id="gallery" class="Gallery">
+  <div class="container"> 
+    <div class="row display_boxflex">
+    	<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+        <div class="box_text">
+          <div class="titlepage">
+            
+          </div>
+          <p><h2>How OLI should be operate in real-life scenario</h2>(This scenariois is the first pair of graph in the example)</p>
+          
+        </div>
+      </div>
+    	<div class="col-xl-24 col-lg-24 col-md-24 col-sm-24">
+         <div class="upcomimg">
+           <video width="1280" height="720" controls="controls">
+
+  				    <source src="images/Route Following.mp4" type="video/mp4">
+
+					   </video>
+        </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- end Gallery --> 
+
+
 
 
     <!--  footer -->
