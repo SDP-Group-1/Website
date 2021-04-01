@@ -96,31 +96,62 @@
 </div>
 
 <!-- upcoming -->
-<div id="upcoming" class="upcoming">
+<div class="upcoming">
   <div class="container-fluid padding_left3">
     <div class="row display_boxflex">
-      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-       <div class="box_text">
-          <div class="titlepage">
-            <h2>App</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+       <div class="text-left">
+          <div class="titlepage text-left">
+            <h2 style="padding-bottom: 30px;">App</h2>
               <p>The front-end of the app was built using Flutter. Flutter is programmed in Dart, which is a lightweight programming 
                 language. Flutter also allows for modularisation of code, making it incredibly easy to divide tasks 
                 and maintain code. 
               </p>
-      </div> 
-    
-      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
-         <div class="upcomimg">
-         	<video width="748" height="1268" controls="controls">
-
-  				 <source src="images/Screen Recording 2021-03-15 at 11.06.39.mov" type="video/mp4">
-
-					</video>
-           
+              <p>The backend of the app consists of a Flask server that hosts our machine learning model. The Flask API created converts the
+                raw sensor readings into the feature vector and feeds it into the trained model. Flask API, in the real product, will be deployed on the robot in this way to avoid the unexpected latency 
+                or even loss of connection if the flask server is deployed by cloud service, and this dose not require connection 
+                to the Internet, since both smartphone and robot are able to communicate within the LAN (considering the most
+                 of home environment has WiFi).</p>
+              <p>
+                The fall detection is be treated as a binary classification (fall/normal behaviors) problem in our implementation.
+                We take the public dataset MobiAct (2nd release) as our training set. For the feature engineering, we looked into the previous related researches, and finally decided to take 19 features in total (see the details on 
+                <a style="font-weight:bold; background-color:rgba(0,0,0,0); color: #2596be; float:none; border:none; padding:0; margin:0; text-decoration: none; width:auto;"
+                href ="https://github.com/SDP-Group-1/fall_detection" target="_blank">GitHub</a>).
+                We compared the performance including the size of the model, runtime and F1-score on different classifiers. We take F1-score rather than commonly used accuracy as main metric is because the dataset is very imbalanced.
+                You can see the final evaluation of the classifier on 
+                <a style="font-weight:bold; color: #2596be;background-color:rgba(0,0,0,0); float:none; border:none; padding:0; margin:0; text-decoration: none; width:auto;"
+                href ="eval.html" target="_blank">Evaluation</a>. 
+              </p>
+          </div> 
         </div>
-          </div>
-  </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <figure>
+        <img src="images/MicrosoftTeams-image PP.png">
+        <figcaption style="text-align: center;">Home screen of the O.L.I. app</figcaption>
+      </figure>
+      </div>
     </div>
+  </div>
+</div>
+<div class="upcomimg align-items-center justify-content-center">
+  <div class = "row">
+  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 p-4">
+  <div class="embed-responsive embed-responsive-16by9">
+    <video class="embed-responsive-item" autoplay muted loop controls>
+    <source src="images/bandicam 2021-03-28 22-22-40-573 (1).mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<div class ="col-xl-3 col-lg-3 col-md-3 col-sm-8 p-4">
+  A small demo of the app detecting a fall. The white window on the left shows an editor
+  with a debug console which shows the 
+  behaviour of the app behind the scene. The terminal window in the middle shows the Flask 
+  server running. When it receives data, runs it through the classifier and returns it to 
+  the app, the results are logged in this window. The right window is the app running on a
+  smartphone, which is mirrored on the laptop for convenience.
+</div>
+</div>
 </div>
 <!-- end upcoming -->
 
@@ -132,21 +163,21 @@
           <div class="titlepage">
             <h2>Navigation</h2>
           </div>
-          <p> O.L.I. starts its movement from a random position in an unknown environment and builds the occupancy grid by keeping track of its own position relative to the built map. <br>We have used SLAM (simultaneous localization and mapping) for this feature and a LDS-O1 LiDAR. </p>
+          <p>O.L.I. starts its movement from a random position in an unknown environment and builds the occupancy grid by keeping track of its own position relative to the built map. <br>We have used SLAM (simultaneous localization and mapping) for this feature and a LDS-O1 LiDAR. </p>
          
         </div>
       </div> 
     
-      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
-         <div class="upcomimg">
-           <div class="embed-responsive embed-responsive-16by9">
-           <video class="embed-responsive-item" autoplay muted loop>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
+          <div class="upcomimg">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" autoplay muted loop>
   				    <source src="images/Occupancy_Grid_Building_Trim.mp4" type="video/mp4">
-					   </video>
-             </div>
-        </div>
+					    </video>
+            </div>
           </div>
-  </div>
+        </div>
+      </div>
     </div>
 </div>
 
