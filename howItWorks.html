@@ -101,18 +101,18 @@
     <div class="row display_boxflex">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
        <div class="text-left">
-          <div class="titlepage text-left">
+          <div class="titlepage">
             <h2 style="padding-bottom: 30px;">App</h2>
-              <p>The front-end of the app was built using Flutter. Flutter is programmed in Dart, which is a lightweight programming 
+              <p class="text-left">The front-end of the app was built using Flutter. Flutter is programmed in Dart, which is a lightweight programming 
                 language. Flutter also allows for modularisation of code, making it incredibly easy to divide tasks 
                 and maintain code. 
               </p>
-              <p>The backend of the app consists of a Flask server that hosts our machine learning model. The Flask API created converts the
+              <p class="text-left">The backend of the app consists of a Flask server that hosts our machine learning model. The Flask API created converts the
                 raw sensor readings into the feature vector and feeds it into the trained model. Flask API, in the real product, will be deployed on the robot in this way to avoid the unexpected latency 
                 or even loss of connection if the flask server is deployed by cloud service, and this dose not require connection 
                 to the Internet, since both smartphone and robot are able to communicate within the LAN (considering the most
                  of home environment has WiFi).</p>
-              <p>
+              <p class="text-left">
                 The fall detection is be treated as a binary classification (fall/normal behaviors) problem in our implementation.
                 We take the public dataset MobiAct (2nd release) as our training set. For the feature engineering, we looked into the previous related researches, and finally decided to take 19 features in total (see the details on 
                 <a style="font-weight:bold; background-color:rgba(0,0,0,0); color: #2596be; float:none; border:none; padding:0; margin:0; text-decoration: none; width:auto;"
@@ -154,9 +154,37 @@
 </div>
 </div>
 <!-- end upcoming -->
-
-<div id="about" class="about">
-  <div class="container-fluid p-3">
+<div class = "container-fluid p-5" style="background-color: aliceblue;">
+  <div class = "row">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="titlepage">
+      <h2>Hardware design</h2>
+      <p class="text-left">The custom designed external frame surrounding O.L.I. is built to include 2 crucial features - 
+        the dynamic support bar which operates via a threaded screw lift system, and the support feet 
+        which operate by deploying linear actuators for stability. The components highlighted in orange
+         are those which make contact, either with the user or with the ground. 
+         Components numbered 1, 2, 3, and 6 are all 3D printed, since their function is that of holding other 
+         components together and providing a minimal amount of support. The rest of the visible frame is 
+         comprised of metal components or electronic parts (namely, linear actuators).
+ </p><p class="text-left">
+        Some issues were faced along the way in terms of getting the design to function correctly and 
+        reliably. Initially, the support bar was raised and lowered using a motor connected to a 
+        pseudo-gearbox, and was also prototyped with a pulley system. The problem with both of these
+         methods is that although the bar was able to move as intended on its own, a very small amount
+          of external pressure would cause the bar to drift down or in some cases, collapse. Raising and
+           lowering the bar with a threaded system has mitigated this issue leading to a much stronger base
+            for the primary contact component of O.L.I.'s frame.
+      </p><p class="text-left"> 
+        Much of the design stayed the same, and has proven to be resilient under various stress tests.</p>
+    </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <img src="images/oliExplRender.png">
+    </div>
+  </div>
+</div>
+</div>
+  <div class="container-fluid p-3" style="background-color: rgb(242, 232, 234);">
     <div class="row display_boxflex">
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
        <div class="box_text">
@@ -179,10 +207,8 @@
         </div>
       </div>
     </div>
-</div>
 
-<div id="about" class="about">
-  <div class="container">
+  <div class="container-fluid p-5" style="background-color: rgb(242, 232, 234);">
     <div class="row display_boxflex">
       
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -206,15 +232,14 @@
     </div>
 
   </div>
-</div>
 
 <!-- end of straight line movement  -->
 
-  <div class="container-fluid p-5"> 
+  <div class="container-fluid p-5" style="background-color: rgb(242, 232, 234);"> 
     <div class="row display_boxflex">
     	<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-        <div class="box_text">
-          <div class="titlepage">
+        <div>
+          <div>
           <h2>Route Planning </h2>
           <p>A route-planning feature has been designed using the previously built occupancy grid, and two given points (start and end) in the form of coordinates. The robot's controller can then plan a route that avoids collisions. The algorithm used is rapidly exploring random tree (RTT). In the images below, you can see some examples with visible tree structure (the red dot represents the starting point while the pink dot represents the target destination):</p>
       </div>
@@ -227,12 +252,12 @@
 </div>
 </div>
 </div>
-<div id="upcoming" class="upcoming">
+<div id="upcoming" class="upcoming" style="background-color: rgb(242, 232, 234);">
   <div class="container-fluid padding_left3">
     <div class="row display_boxflex">
       
     
-      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pb-5 border_right">
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pb-5 border_right" >
          <div class="upcomimg">
            <div class = "embed-responsive embed-responsive-16by9">
            <video width="1028" height="802" autoplay muted loop>
@@ -242,8 +267,8 @@
         </div>
           </div>
           <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-            <div class="box_text">
-               <div class="titlepage">
+            <div>
+               <div>
                  <h2>LIDAR</h2>
                </div>
                <p>We use a LIDAR sensor (LDS-01) to build the occupancy grid. We selected this LiDAR because its features (3.5 meters range and 360 field of view) are suitable for indoor environment mappings. </p>
@@ -258,7 +283,7 @@
     <div class="row display_boxflex">
     	<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <div class="titlepage text-center">
-          <h2>So what would this look like in real life? </h2>
+          <h2>What would this look like in real life? </h2>
             <h3>Since we don't have access to any real hardware, we've created a simulation of O.L.I. in a potential user's home.</h3>
     
           </div>
